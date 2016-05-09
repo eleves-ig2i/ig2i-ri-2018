@@ -1,0 +1,41 @@
+#about-us {
+  background-color: #f9f9f9;
+  border-bottom: 1px solid #cccccc;
+  color: rgb(1, 43, 90);
+}
+#title-team{
+  font-weight: bold;
+  font-size: 48px;
+  margin-top: 60px;
+  margin-bottom: 40px
+}
+.us-container {
+  width: 100%;
+  padding: 0 50px;
+  overflow: hidden;
+  text-align: center;
+  margin-bottom: 70px;
+}
+
+.member {
+  display: inline-block;
+  text-align: center;
+  width: 24%;
+  margin-left: 5px;
+}
+.member img {
+  padding: 10px;
+  width: 90%;
+  border-radius: 35px;
+  max-width: 246px;
+  max-height: 240px;
+}
+
+.member-description {
+  height: 20px;
+  color: rgb(1, 43, 90);
+  position: relative;
+  width: 100%;
+  padding: 0px;
+  font-size: 19px;
+}
