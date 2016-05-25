@@ -6,9 +6,12 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
     <link rel="shortcut icon" href="http://www.ig2i.fr/wp-content/uploads/2014/07/favicons.png">
     <link rel="stylesheet" type="text/css" href="css/style-school.css">
-    <link rel="stylesheet" type="text/css" href="css/style.scss">
     <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.css">
+    <meta property="og:title" content="Rencontres IG2Iennes 2016" />
+    <meta property="og:url" content="http://rencontres.ig2i.fr" />
+    <meta property="og:image" content="http://rencontres.ig2i.fr/pictures/logoCentraleLille2.jpg" />
+    <meta property="og:description" content="Les Rencontres sont une formidable opportunité pour les entreprises d’aller à la rencontre de nos étudiants autour des problématiques qui les intéressent et qui vous concernent." />
 
     <script src="js/jquery.easing.min.js"></script>
     <script src="js/navigation.js"></script>
@@ -79,7 +82,7 @@
                         <a class="page-scroll" href="#school">L'école</a>
                     </li>
                     <li>
-                        <a class="page-scroll" href="#contact-us">Notre plaquette</a>
+                        <a class="" href="plaquette.pdf" target="_blank">Notre plaquette</a>
                     </li>
                     <li>
                         <a class="page-scroll" href="#contact-us">Nous contacter</a>
@@ -132,7 +135,8 @@
             <div class="container">
                 <div class="row">
                         <h1 class="brand-heading">Rencontres IG2Iennes</h1>
-                        <p class="intro-text">Powered by Centrale Lille - IG2I</p>
+                        <p class="intro-text">Powered by Formation IG2I de Centrale Lille</p>
+                        <p class="intro-text">Jeudi 6 Octobre 2016</p>
                         <a href="#project" class="btn btn-circle page-scroll">
                             <i class="fa fa-angle-double-down animated"></i>
                         </a>
@@ -191,7 +195,7 @@
         <h4>
         <div id="text-project-one" style="text-align:left">
           Chers professionnels,</br></br>
-          S’investir dans la formation Centrale Lille IG2I, c’est développer la notoriété de votre entreprise auprès de futurs ingénieurs moteurs de la transformation industrielle et
+          S’investir dans la formation IG2I de Centrale Lille, c’est développer la notoriété de votre entreprise auprès de futurs ingénieurs moteurs de la transformation industrielle et
           numérique. Les Rencontres sont une formidable opportunité pour les entreprises d’aller à la
           rencontre de nos étudiants autour des problématiques qui les intéressent et qui vous
           concernent.</br></br>
@@ -207,7 +211,7 @@
           professionnels et les étudiants en vue d’une future collaboration sous la forme de stage,
           d’apprentissage ou CDI.</br>
           Nous vous attendons nombreux pour cette 11ième édition des Rencontres IG2iennes et
-          espérons que vous êtes tout aussi impatient de rencontrer nos étudiants que nous le
+          espérons que vous êtes tout aussi impatients de rencontrer nos étudiants que nous le
           sommes de vous accueillir à l’IG2I.</br></br></br>
           L’équipe organisatrice.
         </div>
@@ -235,7 +239,7 @@
   </div> <!-- cd-timeline-img -->
 
   <div class="cd-timeline-content">
-    <h2>Debut des conferences</h2>
+    <h2>Debut des conférences</h2>
     <p>Debut des tables rondes et conférences</p>
     <span class="cd-date">10h</span>
   </div> <!-- cd-timeline-content -->
@@ -317,6 +321,14 @@
   .pricing{
     height: 831px;
   }
+  .startup-button {
+    color: rgb(1, 43, 90);
+    margin-bottom: 20px;
+  }
+  .startup-button:hover {
+    cursor: pointer;
+    color: green!important;
+  }
   @media only screen and (max-width: 1170px) {
     .starter-bottom, .privilege-bottom, .prestige-bottom {
       margin-top: 0;
@@ -334,6 +346,15 @@
         <h2 id="title-team">
           Les forfaits
         </h2>
+        <div class="startup-button">
+          <h2 style="">Vous etes une startup et vous voulez participer aux Rencontres IG2Iennes ?</br>
+
+            <div class="" data-color="#2196F3" data-type="startup">
+              Nous avons un pack special pour vous, cliquez ici!
+          </div>
+          </h2>
+        </div>
+
         <section class="container">
         <div class="row white">
 				<div class="block">
@@ -344,15 +365,18 @@
 									<big>Starter</big>
 								</li>
                 <li style="color:#4c7737;">Participation au Job Dating:</br></br>
-                    1 representant</br></br>
-                    Possibilite de revoir 1 etudiant
+                    1 représentant</br></br>
+                    Possibilité de revoir 1 étudiant
                 </li>
 								<li>Votre logo sur la plaquette et le book</li>
                 <div class="starter-bottom">
-                  <li style="color:#4c7737;">A partir de</li>
+                  <li style="color:#4c7737;">Partenaire de Centrale Lille</li>
   								<h3>700€</h3>
   								<li>
-  									<button>Voir le formulaire</button>
+                  <li style="color:#4c7737;">Pas encore partenaire</li>
+  									<h3>1750€</h3>
+  								<li>
+  									<button class="pack-button" data-color="#4c7737" data-type="startup">Voir le formulaire</button>
   								</li>
                 </div>
 
@@ -366,7 +390,7 @@
 								</li>
                 <li style="color:#FF9800;">Participation au Job Dating:</br></br>
                     2 représentants</br></br>
-                    Possibilite de revoir 2 etudiants
+                    Possibilité de revoir 2 étudiants
                 </li>
                 <li style="color:#FF9800;">2 places offertes pour la JDN</li>
                 <li>Présence du logo sur les affiches et le site web de la JDN</li>
@@ -374,10 +398,13 @@
                 <li>Diffusion d’une présentation animée de l’entreprise sur Cré@TV</li>
                 <li>Présence de « Publicité sur lieu de vente » dans la salle collaborative de l’IG2I</li>
                 <div class="privilege-bottom">
-                <li style="color:#FF9800;">A partir de</li>
+                <li style="color:#FF9800;">Partenaire de Centrale Lille</li>
 									<h3 style="color:#FF9800;">1000€</h3>
 								<li>
-									<button style="background-color:#FF9800;">Voir le formulaire</button>
+                  <li style="color:#FF9800;">Pas encore partenaire</li>
+  									<h3 style="color:#FF9800;">2500€</h3>
+  								<li>
+									<button style="background-color:#FF9800;" class="pack-button" data-color="#FF9800" data-type="privilege">Voir le formulaire</button>
 								</li>
                 </div>
 							</ul>
@@ -390,7 +417,7 @@
 								</li>
                 <li style="color:#e13c4c;">Participation au Job Dating:</br></br>
                     3 représentants</br></br>
-                    Possibilite de revoir 4 etudiants
+                    Possibilité de revoir 4 étudiants
                 </li>
                 <li style="color:#e13c4c;">2 places offertes pour la JDN</li>
                 <li style="color:#e13c4c;"> Organisation d'une conférence présentant votre entreprise</li>
@@ -399,10 +426,13 @@
                 <li>Présence du logo sur les affiches et le site web de la JDN</li>
                 <li>Présence de « Publicité sur lieu de vente » dans la salle collaborative de l’IG2I</li>
                 <div class="prestige-bottom">
-                <li style="color:#e13c4c;">A partir de</li>
-								<h3>1300€</h3>
-								<li>
-									<button>Voir le formulaire</button>
+                  <li style="color:#e13c4c;">Partenaire de Centrale Lille</li>
+  								<h3>1300€</h3>
+  								<li>
+                  <li style="color:#e13c4c;">Pas encore partenaire</li>
+  								<h3>3250€</h3>
+  								<li>
+									<button class="pack-button" data-color="#e13c4c" data-type="prestige">Voir le formulaire</button>
 								</li>
               </div>
 							</ul>
@@ -417,7 +447,7 @@
 								</li>
                 <li style="color:#3f4bb8;">Participation au Job Dating:</br></br>
                     3+ représentants</br></br>
-                    Possibilite de revoir 4 etudiants
+                    Possibilité de revoir 4 étudiants
                 </li>
                 <li style="color:#3f4bb8;">2 places offertes pour la JDN</li>
                 <li style="color:#3f4bb8;">Organisation d'une conférence présentant votre entreprise</li>
@@ -425,18 +455,123 @@
                 <li>Diffusion d’une présentation animée de l’entreprise sur Cré@TV</li>
                 <li>Présence du logo sur les affiches et le site web de la JDN</li>
                 <li>Présence de « Publicité sur lieu de vente » dans la salle collaborative de l’IG2I</li>
-                <li style="color:#3f4bb8;">A partir de</li>
+                <li style="color:#3f4bb8;">Partenaire de Centrale Lille</li>
 									<h3>1700€</h3>
 								<li>
-									<button>Voir le formulaire</button>
+                  <li style="color:#3f4bb8;">Pas encore partenaire</li>
+  									<h3>4250€</h3>
+  								<li>
+									<button class="pack-button" data-color="#3f4bb8" data-type="vip">Voir le formulaire</button>
 								</li>
 							</ul>
 					</div>
-
-          <h2>Vous etes une startup et vous voulez participez aux Rencontres IG2Iennes ?</br> <a href="mailto:rencontres2016@ec-lille.fr">Nous avons un pack special pour vous, contactez-nous!</a></h2>
 				</div><!-- /block -->
 			</div><!-- /row -->
   </section>
+
+  <style media="screen">
+    .startup-pricing {
+      margin: 80px 25% 0px 25%;
+      display: none;
+    }
+    @media only screen and (max-width: 768px) {
+      .startup-pricing {
+        margin: 0;
+        padding-top: 20px;
+      }
+    }
+  </style>
+  <section class="startup-pricing" id="">
+    <div class=" clearfix">
+      <h3 style="margin-bottom:20px;">
+        Le choix du pack sera evalué en fonction de multiples critères propre à votre entreprise.
+      </h3>
+      <section class="container">
+      <div class="row white">
+      <div class="block">
+
+        <div class="col-xs-12 col-sm-6 col-md-3">
+            <ul class="pricing " style="height:auto;color:#42A5F5;">
+              <li>
+                <big>Start Up</big>
+              </li>
+              <li style="color:#42A5F5;">Participation au Job Dating:</br></br>
+                  1 représentant</br></br>
+                  Possibilité de revoir 1 étudiant
+              </li>
+              <li>Votre logo sur la plaquette et le book</li>
+              <div class="">
+                <h3>350€</h3>
+                <li>
+                  <button class="pack-button" data-color="#42A5F5" data-type="startup" style="background-color:#42A5F5;">Voir le formulaire</button>
+                </li>
+              </div>
+            </ul>
+        </div>
+
+        <div class="col-xs-12 col-sm-6 col-md-3">
+            <ul class="pricing" style="height:auto;color:#1565C0">
+              <li>
+                <big style="font-size:28px;font-weight:550;">Start Up Premium</big>
+              </li>
+              <li style="color:#1565C0;">Participation au Job Dating:</br></br>
+                  1 représentant</br></br>
+                  Possibilité de revoir 1 étudiant
+              </li>
+              <li>Votre logo sur la plaquette et le book</li>
+              <div class="">
+                <h3>700€</h3>
+                <li>
+                  <button class="pack-button" data-color="#1565C0" data-type="startuppremium" style="background-color:#1565C0;">Voir le formulaire</button>
+                </li>
+              </div>
+
+            </ul>
+        </div>
+
+
+      </div>
+      </div>
+    </section>
+  </section>
+  <style media="screen">
+    .success-message {
+      display: none;
+    }
+  </style>
+
+  <h2 class="success-message">
+    </br>
+    </br>
+    Merci d'avoir soumis ce formulaire, un organisateur va revenir vers vous au plus vite!
+    </br>
+    </br>
+  </h2>
+  <div class="form" id="form" style="display:none;">
+    <div class="form-style-5">
+      <fieldset>
+        <legend class="form-info">Informations sur l'entreprise</legend>
+        <input id="company" type="text" name="field1" placeholder="Nom de la companie*">
+        <input id="name" type="text" name="field1" placeholder="Nom du contact*">
+        <input id="email" type="email" name="field2" placeholder="Adresse mail *" required>
+        <input id="telephone" type="telephone" name="field2" placeholder="Telephone">
+        <legend class="form-info">Forfait choisis:</legend>
+        <select id="job" name="field4">
+          <option value="startup">Start Up</option>
+          <!-- <option value="startuppremium">Start Up Premium</option> -->
+          <option value="starter">Starter</option>
+          <option value="privilege">Privilege</option>
+          <option value="prestige">Prestige</option>
+          <option value="vip" selected>VIP</option>on>
+        </select>
+      </fieldset>
+      <fieldset>
+        <legend class="form-info">Informations complementaires</legend>
+        <textarea name="field3" id="infos" placeholder="A propos de votre entreprise"></textarea>
+      </fieldset>
+      <input class="form-button" type="submit" value="Apply" />
+    </div>
+  </div>
 
     </section>
     <style media="screen">
@@ -489,17 +624,24 @@
       }
     </style>
     <section class="" id="contact-us" style="background-color: white;">
-      <div class="contact-container clearfix" style="color:white;">
+      <div class="contact-container" style="color:white;">
         <h2 style="color:gray;">Contactez nous!</h2>
         <a href="mailto:rencontres2016@ec-lille.fr" >
-          <i class="fa fa-envelope-o fa-4 shake-slow"></i>
+          <i class="fa fa-envelope-o fa-4 shake-slow" style="font-size:100px;height:auto;padding-right:20px;"></i>
+        </a>
+        <a href="mailto:rencontres2016@ec-lille.fr" >
+          <img src="pictures/logoCentraleLille.jpg" style="width:300px;height:auto;padding-right:20px;"class="shake-slow">
+        </a>
+        <a href="tel:+33665909788" >
+          <img src="pictures/tim.png" style="width:100px;height:auto;padding-right:20px;"class="shake-slow">
+        </a>
+        <a href="tel:+33645858397" >
+          <img src="pictures/lucien.png" style="width:100px;height:auto;padding-right:20px;"class="shake-slow">
         </a>
       </div>
     </section>
 
     <footer>
     </footer>
-    <script src="node_modules/particles.js/particles.js"></script>
-    <script src="js/load-particles.js"></script>
   </body>
 </html>

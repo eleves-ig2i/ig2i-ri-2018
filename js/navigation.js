@@ -11,17 +11,56 @@ function collapseNavbar() {
 $(window).scroll(collapseNavbar);
 $(document).ready(function(){
   collapseNavbar();
-  // var pricing_height = 0;
-  // $('.pricing').each(function(){
-  //   if (pricing_height < $(this).height()) {
-  //     pricing_height = $(this).height();
-  //   }
-  // })
-  // $('.pricing').each(function(){
-  //   console.log(pricing_height)
-  //   $(this).css("height", pricing_height)
-  // })
-});
+
+  $('.pack-button').click(function(){
+    $('.success-message').hide();
+    color = $(this).data('color');
+    pack = $(this).data('type')
+    $('.form-button').css('background', color).css('border-color',color);
+    $('.form-info').css('color', color);
+    $('#job option').each(function(){
+      if (pack == $(this).val())
+        $(this).prop('selected', true);
+      });
+      $('.form').fadeIn();
+      $('html, body').animate({
+        scrollTop: $("#form").offset().top - 100
+    }, 500);
+  })
+
+  $('.startup-button').click(function(){
+    $('.startup-pricing').slideToggle();
+    $('html, body').animate({
+      scrollTop: $(".startup-pricing").offset().top - 100
+    }, 500);
+  })
+
+  $('.form-button').click(function(){
+    if ($('#email').val() != '') {
+      var data = {
+        'email': $('#email').val(),
+        'company': $('#company').val(),
+        'name': $('#name').val(),
+        'infos': $('#infos').val(),
+        'pack': $('#job option:selected').val(),
+        'telephone': $('#telephone').val()
+      }
+      $.ajax({
+        url: "../mailer.php",
+        data: data,
+        method: "POST",
+        dataType: "json",
+        success: function(data){
+          console.log(data);
+          $('.form').hide();
+          $('.success-message').show();
+        }
+      });
+    }
+  })
+
+
+  });
 
 // jQuery for page scrolling feature - requires jQuery Easing plugin
 $(function() {
