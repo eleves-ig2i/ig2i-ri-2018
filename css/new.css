@@ -1,0 +1,12 @@
+/*.intro-body {
+	background-image: url("./images/ig2i.jpg") !important;
+	background-position: center !important;
+	background-size: cover !important;
+}*/
+
+#imageeee {
+	background: none;
+	background-image: url("images/ig2i.jpg") !important;
+	background-position: center !important;
+	background-size: cover !important;
+}
