@@ -299,7 +299,7 @@
 
 <div class="cd-timeline-block">
   <div class="cd-timeline-img cd-picture">
-    <img src="pictures/drink.png" alt="Movie" style="height: 40px; margin-top: 4px;">
+    <img id="drink" src="pictures/drink.png" alt="Movie" >
   </div> <!-- cd-timeline-img -->
 
   <div class="cd-timeline-content">
@@ -627,18 +627,28 @@
     <section class="" id="contact-us" style="background-color: white;">
       <div class="contact-container" style="color:white;">
         <h2 style="color:gray;">Contactez nous!</h2>
-        <a href="mailto:rencontres2016@ec-lille.fr" >
-          <i class="fa fa-envelope-o fa-4 shake-slow" style="font-size:100px;height:auto;padding-right:20px;"></i>
+        <a href="mailto:{{MAIL}}" >
+          <i class="fa fa-envelope fa-4 shake-slow" style="font-size:100px;height:auto;padding-right:20px;"></i>
         </a>
-        <a href="mailto:rencontres2016@ec-lille.fr" >
+        <a href="tel:+{{NUMBER}}" >
+          <i class="fa fa-phone fa-4 shake-slow" 
+          	style="
+          		font-size:100px;
+          		height:auto;
+          		padding-right:20px;
+          		position: relative;
+    					top: 8px;">
+    			</i>
+        </a>
+        <!--<a href="mailto:rencontres2016@ec-lille.fr" >
           <img src="pictures/logoCentraleLille.jpg" style="width:300px;height:auto;padding-right:20px;"class="shake-slow">
         </a>
         <a href="tel:+33665909788" >
           <img src="pictures/tim.png" style="width:100px;height:auto;padding-right:20px;"class="shake-slow">
-        </a>
-        <a href="tel:+33645858397" >
+        </a>-->
+        <!--<a href="tel:+33645858397" >
           <img src="pictures/lucien.png" style="width:100px;height:auto;padding-right:20px;"class="shake-slow">
-        </a>
+        </a>-->
       </div>
     </section>
 
