@@ -10,3 +10,14 @@
 	background-position: center !important;
 	background-size: cover !important;
 }
+
+body {
+
+	background-color: white  !important;
+}
+
+#contact-us{
+	max-width: 1000px !important;
+    margin: auto !important;
+
+}
